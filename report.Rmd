@@ -9,6 +9,21 @@ output:
 dim(iris)
 ```
 
+
+```{r}
+summary(cars)
+```
+
+```{r, echo=FALSE}
+summary(cars)
+```
+
+```{r, eval=FALSE}
+summary(cars)
+```
+
+
+
 ```{r echo=FALSE}
 
 

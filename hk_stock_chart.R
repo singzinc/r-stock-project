@@ -7,7 +7,7 @@ library(rmarkdown)
 source("R/date.R")
 source("R/stock_list.R")
 source("R/create_chart.R")
-source("R/dividend_history.R")
+#source("R/dividend_history.R")
 source("R/ta.R")
 
 chartType <- c(1,3,6)
@@ -24,10 +24,10 @@ hkStockList <- c("0005.HK", "0700.HK", "0939.HK", "3988.hk", "^HSI")
 
 realDownloadChart(hkStockList , chartType, type1Ta)
 
-dividendChart("0005.hk")
+#dividendChart("0005.hk")
 
 
-downloadDividendHistory ("0005.hk" , "hk")
+#downloadDividendHistory ("0005.hk" , "hk")
 
-result <- downloadDividendHistory ("0005.hk")
-result
+#result <- downloadDividendHistory ("0005.hk")
+#result

@@ -22,8 +22,16 @@ realDownloadChart <- function(stockList,chartType,taList){
     for(mon in chartType){
       startDate <- getStartDate(mon)
       dataRange <- getStartEndDate(mon)
+      png(file="mygraphic.png",width=400,height=350)
       chartSeries(stockData,name=stockSymbol,subset=dataRange,theme=chartTheme('white') ,
                   TA=taList)
+      
+      #('png')
+      #saveChart('png', width=13)
+      exportFileName = paste(stockSymbol, "_" , chartType,".png",sep="")
+      dev.copy(png, exportFileName)
+      dev.off()
+      
       
     }
   }
