@@ -47,7 +47,7 @@ candleChart(intra2, theme = 'black')
 
 
 
-ticker <- '^HSI'
+ticker <- '.INX'
 #intra2 <- intraday(ticker, 60 * 5, '1d')
 intra2 <- intraday(ticker, 60 * 1, '1d')
 

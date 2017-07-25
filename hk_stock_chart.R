@@ -1,13 +1,13 @@
 
 library(ggplot2)
 library(quantmod)
-library(PerformanceAnalytics)
+#library(PerformanceAnalytics)
 library(rmarkdown)
 
 source("R/date.R")
 source("R/stock_list.R")
 source("R/create_chart.R")
-#source("R/dividend_history.R")
+source("R/dividend_history.R")
 source("R/ta.R")
 
 chartType <- c(1,3,6)
